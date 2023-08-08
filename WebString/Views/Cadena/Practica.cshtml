@@ -1,0 +1,128 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Practica</title>
+    <style>
+        .color {
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1> Web String</h1>
+
+        <!-- Ejercicio 1: Cantidad de caracteres-->
+        <form action="/Cadena/Contador" method="post">
+            <label>Ejercicio 1</label>
+            <input type="text" name="cadena" />
+
+            <input type="submit" value="Contar" />
+        </form>
+        <h3 class="color">@TempData["ejercicio1"]</h3>
+        <br />
+
+        <!-- Ejercicio 2: ToUpper -->
+        <form action="/Cadena/Mayus" method="post">
+            <label>Ejercicio 2</label>
+            <input type="text" name="cadena" />
+
+            <input type="submit" value="Mayúsculas" />
+        </form>
+        <h3 class="color">@TempData["ejercicio2"]</h3>
+        <br />
+
+        <!-- Ejercicio 3: ToLower -->
+        <form action="/Cadena/Minus" method="post">
+            <label>Ejercicio 3</label>
+            <input type="text" name="cadena" />
+
+            <input type="submit" value="Minúsculas" />
+        </form>
+        <h3 class="color">@TempData["ejercicio3"]</h3>
+        <br />
+
+        <!-- Ejercicio 4: Concatenar -->
+        <form action="/Cadena/Concatenar" method="post">
+            <label>Ejercicio 4</label>
+            <input type="text" name="cadenaUno" />
+            <input type="text" name="cadenaDos" />
+            <input type="text" name="cadenaTres" />
+
+            <input type="submit" value="Concatenar" />
+        </form>
+        <h3 class="color">@TempData["ejercicio4"]</h3>
+        <br />
+
+        <!-- Ejercicio 5: Validaciones -->
+        <form action="/Cadena/Validar" method="post">
+            <label>Ejercicio 5</label>
+            <input type="text" name="cadenaUno" />
+            <input type="text" name="cadenaDos" />
+
+            <input type="submit" value="Validar" />
+        </form>
+        <h3 class="color">@TempData["ejercicio5"]</h3>
+        <br />
+
+        <!-- Ejercicio 6: Quitar caracteres especiales -->
+        <form action="/Cadena/QuitarCaracter" method="post">
+            <label>Ejercicio 6</label>
+            <input type="text" name="cadena" />
+
+            <input type="submit" value="Quitar caracteres" />
+        </form>
+        <h3 class="color">@TempData["ejercicio6"]</h3>
+        <br />
+
+        <!-- Ejercicio 7: Eliminar ultima coma -->
+        <form action="/Cadena/QuitarComa" method="post">
+            <label>Ejercicio 7</label>
+            <input type="text" name="cadena" />
+
+            <input type="submit" value="Quitar coma" />
+        </form>
+        <h3 class="color">@TempData["ejercicio7"]</h3>
+        <br />
+
+        <!-- Ejercicio 8: Caracteres en blanco -->
+        <form action="/Cadena/QuitarEspacios" method="post">
+            <label>Ejercicio 8</label>
+            <input type="text" name="cadena" />
+
+            <input type="submit" value="Limpiar" />
+        </form>
+        <h3 class="color">@TempData["ejercicio8"]</h3>
+        <br />
+
+        <!-- Ejercicio 9: Validar String -->
+        <form action="/Cadena/ValidarString" method="post">
+            <label>Ejercicio 9</label>
+            <input type="text" name="cadena" />
+
+            <input type="submit" value="Validar" />
+        </form>
+        <h3 class="color">@TempData["ejercicio9"]</h3>
+        <br />
+
+        <!-- Ejercicio 10: Agregar cerps -->
+        <form action="/Cadena/Agregar" method="post">
+            <label>Ejercicio 10</label>
+            <input type="text" name="cadena" />
+
+            <input type="submit" value="Agregar" />
+        </form>
+        <h3 class="color">@TempData["ejercicio10"]</h3>
+        <br />
+
+    </div>
+</body>
+</html>
